@@ -1,0 +1,283 @@
+@font-face { 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  padding: 0;
+  margin: 0;
+}
+  
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+ 
+}
+
+body { 
+  font: normal .8em arial, sans-serif;
+  background: #C4E9E8 url(../images/back.png) repeat-x;
+  color: #555;
+}
+
+
+#container { 
+  background: transparent url(../images/grass.png) repeat-x bottom;
+  display: flex;
+  position: relative;
+}
+
+.posicion{
+  position: absolute;
+  z-index: -1;
+}
+
+#main{
+  width: 60%;
+  height: 90%;
+  background-color: white;
+  margin: 0px auto 0px auto;
+  border-style: solid;
+  border-color: lightgreen;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#main, nav, header{
+  padding: 3%;
+
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img{
+  width: 100%;
+}
+
+h1{
+  color: #E5017D;
+}
+
+#zaguate img{
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  height: 11%;
+  margin-top: 6%;
+  margin-left: 5%;
+  padding: 4%;
+}
+
+#zaguate{
+  padding: 5px;
+  width: 100%;
+  display: flex;
+}
+
+#zaguate p{
+  width: 94%; 
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5px;
+}
+
+#contenido_main{
+  width: 60%;
+  float: left;
+  margin:0px auto 0px auto;
+}
+
+#lista ol{
+  width: 100%;
+  padding-left:20px;
+}
+
+#lista{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  padding: 5px;
+}
+
+#lista, #llegados, #cuidados, #contacto{
+  height: 100%;
+}
+
+nav{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.cont_nav{
+  overflow: hidden;
+  background-color: #53C7FD;
+  font-family:Yanone Kaffeesatz;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+#pie{
+  width: 100%;
+  overflow: hidden;
+  background-color: #53C7FD;
+  font-family:Yanone Kaffeesatz;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5% 1px 5%
+}
+
+#pie ol{
+  list-style-type: none;
+}
+
+#pie a{
+  color: #FFF;
+}
+
+#credit{
+  color: #FFF;
+
+}
+
+#pie li a {
+  text-decoration: underline;
+ 
+}
+
+.cont_nav a:hover, nav{
+  color:#E5017D ;
+  
+}
+
+.cont_nav li{
+  list-style-type: none;
+  float: left;
+}
+
+li a, .contenedoropciones{
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.listapie li a{
+  padding: 1px 1px;
+}
+
+li a:hover, .opcionesdisponibles:hover .contenedoropciones {
+  color:#E5017D ;
+  
+}
+
+li.opcionesdisponibles{
+  display: inline-block;
+}
+
+.desplegar{
+  
+  display: none;
+  position: absolute;
+  background-color: #53C7FD;
+  min-width: 160px;
+  
+  z-index: 1;
+
+}
+
+.desplegar a{
+  color: #FFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.desplegar a:hover{
+  color:#E5017D ;
+}
+
+.opcionesdisponibles:hover .desplegar{
+  display: block;
+}
+
+#articulos {
+  margin-left: 10%;
+  width: 200px;
+  float: left;
+}
+
+#Llegados{
+  border: solid;
+  margin-top: 1%;
+  border-color: #C9E5E9;
+  background-color: #F5FEFF;
+  width: 100%;
+  border-radius: 15px;
+  padding: 14px 16px;
+  list-style: none;
+ 
+  margin-bottom: 5%;
+}
+
+#recienLlegados a {
+  text-decoration: underline;
+}
+
+.texto {
+  color: #81e602;
+  font-size: 20px;
+  margin: 2%;
+}
+
+#fecha em {
+  font-size: 14px;
+  margin-left: 2%;
+}
+
+#Llegados a {
+  font-size: 14px;
+  color: rgb(63, 175, 175);
+}
+
+#cuidados {
+  border: solid;
+  margin-top: 3%;
+  border-color: #C9E5E9;
+  background-color: #F5FEFF;
+  width: 100%;
+  border-radius: 15px;
+  padding: 14px 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#parrafo {
+  font-size: 15px;
+  margin-left: 2%;
+  font-family: Yanone Kaffeesatz;
+}
+
+#contactenos {
+  border: solid;
+  margin-top: 3%;
+  border-color: #C9E5E9;
+  background-color: #F5FEFF;
+  width: 100%;
+  border-radius: 15px;
+  padding: 14px 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
